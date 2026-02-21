@@ -1,8 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-image:
-  linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)),
-  url("img/fondo.jpg");
+  background-image: url("/img/fondo.jpg");
   text-align: center;
   margin: 0;
   padding: 20px;
@@ -42,4 +40,5 @@ button {
 
 img {
   width: 150px;
+  opacity: 1;
 }
