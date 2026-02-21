@@ -1,24 +1,25 @@
 // Colores por tipo
 const typeColors = {
-  fire: "#F08030",
-  water: "#6890F0",
-  grass: "#78C850",
-  electric: "#F8D030",
-  ice: "#98D8D8",
-  fighting: "#C03028",
-  poison: "#A040A0",
-  ground: "#E0C068",
-  flying: "#A890F0",
-  psychic: "#F85888",
-  bug: "#A8B820",
-  rock: "#B8A038",
-  ghost: "#705898",
-  dragon: "#7038F8",
-  dark: "#705848",
-  steel: "#B8B8D0",
-  fairy: "#EE99AC",
-  normal: "#A8A878"
+  fire: "rgba(240, 128, 48, 0.5)",   
+  water: "rgba(104, 144, 240, 0.5)",
+  grass: "rgba(120, 200, 80, 0.5)",
+  electric: "rgba(248, 208, 48, 0.5)",
+  ice: "rgba(152, 216, 216, 0.5)",
+  fighting: "rgba(192, 48, 40, 0.5)",
+  poison: "rgba(160, 64, 160, 0.5)",
+  ground: "rgba(224, 192, 104, 0.5)",
+  flying: "rgba(168, 144, 240, 0.5)",
+  psychic: "rgba(248, 88, 136, 0.5)",
+  bug: "rgba(168, 184, 32, 0.5)",
+  rock: "rgba(184, 160, 56, 0.5)",
+  ghost: "rgba(112, 88, 152, 0.5)",
+  dragon: "rgba(112, 56, 248, 0.5)",
+  dark: "rgba(112, 88, 72, 0.5)",
+  steel: "rgba(184, 184, 208, 0.5)",
+  fairy: "rgba(238, 153, 172, 0.5)",
+  normal: "rgba(168, 168, 120, 0.5)"
 };
+
 
 async function getPokemon(name) {
   try {
@@ -53,6 +54,7 @@ document.getElementById("search-form").addEventListener("submit", async (e) => {
   const pokemon = await getPokemon(name);
   if (pokemon) renderPokemon(pokemon);
 });
+
 
 
 
