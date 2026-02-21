@@ -35,10 +35,9 @@ button {
   margin: auto;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   color: white;
-  opacity: 0.5;
+  background-color: rgba(255, 99, 71, 0);
 }
 
 img {
   width: 150px;
-  opacity: 1;
 }
