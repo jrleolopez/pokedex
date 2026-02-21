@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokédex</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f0f0f0;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    img {
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pokédex</h1>
+  <input type="text" id="pokemonName" placeholder="Ingresa un Pokémon">
+  <button onclick="searchPokemon()">Buscar</button>
+  <div id="pokemonCard" class="card"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
