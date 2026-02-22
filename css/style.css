@@ -1,6 +1,12 @@
 body {
+  display: flex; justify-content: center; 
+  align-items: center;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
-  background-image: url("../img/fondo.jpg")
+  background-image: url("../img/fondo.jpg"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
   text-align: center;
   margin: 0;
   padding: 20px;
@@ -22,20 +28,23 @@ input {
 button {
   padding: 10px 15px;
   font-size: 16px;
-  background: #e3350d;
+  background: #b22222;
+  transition: background 0.3s ease;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 #pokemon-container {
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 400px;
-  margin: auto;
-  color: white;
+  border-radius: 10px; 
+  padding: 20px; 
+  max-width: 400px; 
+  margin: 20px auto; 
+  color: white; text-align: center;
 }
 
 img {
-  width: 150px;
+  width: 100%; 
+  max-width: 220px; 
+  height: auto;
 }
