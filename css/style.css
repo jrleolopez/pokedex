@@ -20,29 +20,38 @@ form {
 }
 
 input {
-  padding: 10px;
+  padding: 12px 15px;
   font-size: 16px;
-  flex: 1 1 auto;
+  border: 2px solid #e3350d;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff7f50;
+  box-shadow: 0 0 8px rgba(227, 53, 13, 0.6);
 }
 
 button {
-  padding: 10px 15px;
+  padding: 12px 20px;
   font-size: 16px;
-  background: #e3350d;
+  background: linear-gradient(135deg, #e3350d, #ff7f50);
   color: white;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background: #b22222;
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #b22222, #e67300);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-button:focus, input:focus {
-  outline: 2px solid #e3350d;
-  outline-offset: 2px;
+button:active {
+  transform: scale(0.95);
 }
 
 #pokemon-container {
