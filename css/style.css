@@ -23,9 +23,9 @@ body {
 h1 {
   font-size: 3.5rem;
   color: #e3350d;
-  padding-top: 50px;
+  padding-top: 40px;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: white;
 }
 
 form {
