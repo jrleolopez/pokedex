@@ -1,23 +1,23 @@
 // Colores por tipo
 const typeColors = {
-  fire: "rgba(240, 128, 48, 0.5)",   
-  water: "rgba(104, 144, 240, 0.5)",
-  grass: "rgba(120, 200, 80, 0.5)",
-  electric: "rgba(248, 208, 48, 0.5)",
-  ice: "rgba(152, 216, 216, 0.5)",
-  fighting: "rgba(192, 48, 40, 0.5)",
-  poison: "rgba(160, 64, 160, 0.5)",
-  ground: "rgba(224, 192, 104, 0.5)",
-  flying: "rgba(168, 144, 240, 0.5)",
-  psychic: "rgba(248, 88, 136, 0.5)",
-  bug: "rgba(168, 184, 32, 0.5)",
-  rock: "rgba(184, 160, 56, 0.5)",
-  ghost: "rgba(112, 88, 152, 0.5)",
-  dragon: "rgba(112, 56, 248, 0.5)",
-  dark: "rgba(112, 88, 72, 0.5)",
-  steel: "rgba(184, 184, 208, 0.5)",
-  fairy: "rgba(238, 153, 172, 0.5)",
-  normal: "rgba(168, 168, 120, 0.5)"
+  fire: "rgba(240, 128, 48, 0.7)",   
+  water: "rgba(104, 144, 240, 0.7)",
+  grass: "rgba(120, 200, 80, 0.7)",
+  electric: "rgba(248, 208, 48, 0.7)",
+  ice: "rgba(152, 216, 216, 0.7)",
+  fighting: "rgba(192, 48, 40, 0.7)",
+  poison: "rgba(160, 64, 160, 0.7)",
+  ground: "rgba(224, 192, 104, 0.7)",
+  flying: "rgba(168, 144, 240, 0.7)",
+  psychic: "rgba(248, 88, 136, 0.7)",
+  bug: "rgba(168, 184, 32, 0.7)",
+  rock: "rgba(184, 160, 56, 0.7)",
+  ghost: "rgba(112, 88, 152, 0.7)",
+  dragon: "rgba(112, 56, 248, 0.7)",
+  dark: "rgba(112, 88, 72, 0.7)",
+  steel: "rgba(184, 184, 208, 0.7)",
+  fairy: "rgba(238, 153, 172, 0.7)",
+  normal: "rgba(168, 168, 120, 0.7)"
 };
 
 
@@ -54,6 +54,7 @@ document.getElementById("search-form").addEventListener("submit", async (e) => {
   const pokemon = await getPokemon(name);
   if (pokemon) renderPokemon(pokemon);
 });
+
 
 
 
