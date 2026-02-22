@@ -2,6 +2,7 @@ body {
   display: flex; 
   align-items: center; 
   min-height: 100vh;
+  font-family: "Oswald", sans-serif;
   flex-direction: column;
   background-image: url("../img/fondo.jpg"); 
   background-size: cover; 
