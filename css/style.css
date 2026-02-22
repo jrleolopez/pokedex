@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   background-image: url("../img/fondo.jpg");
@@ -12,11 +13,16 @@ h1 {
 
 form {
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 input {
   padding: 10px;
   font-size: 16px;
+  flex: 1 1 auto;
 }
 
 button {
@@ -26,6 +32,17 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #b22222;
+  transform: scale(1.05);
+}
+
+button:focus, input:focus {
+  outline: 2px solid #e3350d;
+  outline-offset: 2px;
 }
 
 #pokemon-container {
@@ -34,9 +51,39 @@ button {
   max-width: 400px;
   margin: auto;
   color: white;
-  background-color: rgba(255, 99, 71, 0);
+  background-color: rgba(255, 99, 71, 0.8);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 img {
-  width: 350px;
+  max-width: 100%;
+  height: auto;
 }
+
+.shadow {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.focus-outline:focus {
+  outline: 2px solid #e3350d;
+  outline-offset: 2px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  #pokemon-container {
+    max-width: 100%;
+  }
+}
+
